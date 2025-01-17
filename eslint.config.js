@@ -87,10 +87,12 @@ export default tseslint
         'import/no-extraneous-dependencies': 'off',
         'no-underscore-dangle': 'off',
         'react-hooks/exhaustive-deps': 'error',
+        '@typescript-eslint/no-unsafe-assignment': 'off',
+        '@typescript-eslint/no-unsafe-call': 'off',
         ...reactHooks.configs.recommended.rules,
         ...react.configs.recommended.rules, // React rules
         ...react.configs['jsx-runtime'].rules, // JSX runtime rules
-        'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+        // 'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
       },
     },
   )

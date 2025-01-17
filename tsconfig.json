@@ -12,13 +12,14 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "resolveJsonModule": true,
-    "isolatedModules": true, 
+    "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
     "baseUrl": "./",
     "paths": {
-      "@/*": ["src/*"]
-    },
+      "@/*": ["src/*"],
+      "@shadecn/*": ["src/shadecn/components/ui/*"]
+    }
   },
   "include": ["src"],
   "references": [
